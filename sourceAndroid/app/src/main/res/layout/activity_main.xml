@@ -14,27 +14,35 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:hint="IP"
-        android:inputType="number|numberSigned"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="55dp" />
 
     <EditText
         android:id="@+id/etPort"
-        android:layout_width="wrap_content"
+        android:layout_width="207dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="PORT"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:inputType="text|textPersonName|number"
+        android:textColorLink="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIp"
+        app:layout_constraintVertical_bias="0.09" />
 
     <Button
         android:id="@+id/btConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CONNECT"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="259dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="392dp" />
 
 </android.support.constraint.ConstraintLayout>
